@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
-  "keywords": [],
   "author": "Bill Broughton <wlbrough@gmail.com>",
   "license": "MIT",
   "devDependencies": {
