@@ -1,12 +1,19 @@
-const processFile = require("../lib/geocode_service");
+const geocodeService = require("../lib/geocode_service");
 
 jest.mock("../lib/https_request", () => {
-  return jest.fn(() => ({ geometry: { location_type: "ROOFTOP" } }));
+  return jest.fn(() => ({
+    status: "OK",
+    results: [{ geometry: { location_type: "ROOFTOP" } }]
+  }));
 });
 
 describe("index suite", function() {
-  test("should do something", function() {
-    expect(true).toBe(true);
+  test("should receive a resolved promise containing results", async () => {
+    expect.assertions(1);
+    const data = await geocodeService(
+      '"1600 Pennsylvania Ave NW, Washington, DC 20500"'
+    );
+    expect(data).toMatchObject({ geometry: { location_type: "ROOFTOP" } });
   });
 });
 
