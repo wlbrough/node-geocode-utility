@@ -2,8 +2,7 @@ const processFile = require("../lib/index");
 
 const config = {
   maxApiCallsPerSecond: 50,
-  inputFile: "Addresses.csv",
-  outputFile: "Geocode.csv"
+  inputFile: "Addresses.csv"
 };
 
 const configWithKey = {
