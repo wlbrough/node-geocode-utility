@@ -4,6 +4,7 @@
   "description": "Geocaches addresses provided in CSV and stores output",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "lint": "eslint .",
     "test": "jest",
     "test-watch": "jest --watch"
