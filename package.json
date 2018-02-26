@@ -1,7 +1,7 @@
 {
-  "name": "geocaching-example",
+  "name": "geocoding-example",
   "version": "1.0.0",
-  "description": "Geocaches addresses provided in CSV and stores output",
+  "description": "Geocodes addresses provided in CSV and stores output",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

@@ -1,4 +1,4 @@
-# Node.js Geocaching Utility
+# Node.js Geocoding Utility
 
 This package takes an input CSV file with one column of address data and returns geocodes from Google's Geocoding API. Only geocodes with a single, complete result having location_type "ROOFTOP" are returned.
 
@@ -16,16 +16,10 @@ node 8.x or greater
 
 A step by step series of examples that tell you have to get a development env running
 
-Clone the repo from GitHub
+Change to the newly project directory
 
 ```
-$ git clone https://github.com/wlbrough/node-geocode-utility
-```
-
-Change to the newly created directory
-
-```
-$ cd node-geocode utility
+$ cd geocoding
 ```
 
 Install dependencies (only necessary for development)
@@ -34,7 +28,7 @@ Install dependencies (only necessary for development)
 $ npm install
 ```
 
-Add environment variable containing Geocaching API Key (Optional)
+Add environment variable containing Geocoding API Key (Optional)
 
 ```
 $ export GEOCODING_API_KEY=testkey
